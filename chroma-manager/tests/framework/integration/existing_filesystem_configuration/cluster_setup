@@ -76,7 +76,7 @@ else
     ARCHIVE_PATH=chroma-bundles
 fi
 
-if [ -f ~/storage_server.repo ]; then
+if [ -z "$LUSTRE_REVIEW_BUILD" ] && [ -f ~/storage_server.repo ]; then
     STORAGE_SERVER_REPO=~/storage_server.repo
 fi
 
